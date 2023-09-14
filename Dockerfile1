@@ -1,9 +1,0 @@
-## golang镜像构建
-## golang 代码构建为镜像
-## v1
-
-FROM golang:latest
-WORKDIR /opt/app
-COPY golang.go .
-RUN go build -o example golang.go
-CMD ["/opt/app/example"]
